@@ -21,28 +21,30 @@
       color: #c2185b;
     }
     .animated-text {
+      display: inline-block;
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid;
-      width: 0;
-      display: inline-block;
-      animation: typing 4s steps(60, end) forwards, blink 0.75s step-end infinite;
+      font-size: 18px;
+      animation: typing 7s steps(100, end) forwards, blink 0.75s step-end infinite;
     }
     @keyframes typing {
-      to { width: 100%; }
+      from { width: 0 }
+      to { width: 100% }
     }
     @keyframes blink {
       50% { border-color: transparent; }
     }
     .song-link {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 10px 20px;
+      margin-top: 1.5rem;
+      padding: 12px 24px;
       background-color: #d63384;
       color: white;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -51,13 +53,13 @@
     <h1>Para Mailop 💖</h1>
 
     <h2>Cartita para ti (se escribe sola)</h2>
-    <p class="animated-text" style="max-width: 100%; display: inline-block;">
-      Chaparra, no sé cómo pasó, pero me gustas un chorro. Eres divertida, loca (en el buen sentido) y haces que mis días sean más chidos. No prometo poemas, pero sí risa, cariño y muchos stickers.
+    <p class="animated-text">
+      Chaparra, no sé cómo pasó, pero me gustas un chorro. Eres divertida, loca (en el buen sentido) y haces que mis días sean más chidos. No prometo poemas, pero sí risa, cariño y muchos stickers. Gracias por estar y por hacerme sentir tan bien desde el día uno. 💌
     </p>
 
-    <div class="song-link">
-     <a href="https://open.spotify.com/track/4TnRwzE9lQwJ0YvB0YlCMY" target="_blank" style="color:white; text-decoration: none;">
-  🎶 Nuestra rolita – She de Tyler, The Creator
+    <div>
+      <a class="song-link" href="https://open.spotify.com/track/4TnRwzE9lQwJ0YvB0YlCMY" target="_blank">
+        🎶 Nuestra rolita – She de Tyler, The Creator
       </a>
     </div>
   </div>
